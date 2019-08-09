@@ -1,0 +1,15 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "sites_psmoviestoredm_name": {
+            "value": "psmoviestoredm1"
+        },
+        "serverfarms_psmoviestoredm_name": {
+            "value": "psmoviestoredm1"
+        },
+        "registries_psregistrydm_name": {
+            "value": "psregistrydm1"
+        }
+    }
+}
