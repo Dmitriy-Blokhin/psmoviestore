@@ -19,7 +19,7 @@ How to up and run this example:
 7. Open powershell CLI as Administrator and run the [deploy.ps1] script from [ARM Template] folder using following commands:
 	- [Set-ExecutionPolicy RemoteSigned] 
 	- Type A and press Enter
-	- [& "<Absolute path to deploy.ps1>\deploy.ps1"]
+	- [& "[Absolute path to deploy.ps1]\deploy.ps1"]
 	- Input Azure subscription ID and press Enter
 	- Input Resourse Group name for all resourses [psmoviestore] and press Enter
 	- Input name of deployment [InitialDeployment] and press Enter
