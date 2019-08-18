@@ -10,7 +10,7 @@ How to up and run this example:
 	Pricing API says:
 	- value 1
 	- value 2
-	- <ID of docker container with web-service>
+	- ID of docker container with web-service
 5. Repeat building solution in Release mode.
 6. Run in command console: [docker image]
    Inspect the outpup and ensure that it contains following images:
