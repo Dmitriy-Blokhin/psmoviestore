@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "sites_psmoviestoredm_name": {
-            "value": "psmoviestoredm1"
+            "value": "psmoviestoredm"
         },
         "serverfarms_psmoviestoredm_name": {
-            "value": "psmoviestoredm1"
+            "value": "psmoviestoredm"
         },
         "registries_psregistrydm_name": {
-            "value": "psregistrydm1"
+            "value": "psregistrydm"
         }
     }
 }

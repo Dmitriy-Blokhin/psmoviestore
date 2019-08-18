@@ -3,15 +3,15 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "sites_psmoviestoredm_name": {
-            "defaultValue": "psmoviestoredm1",
+            "defaultValue": "psmoviestoredm",
             "type": "String"
         },
         "serverfarms_psmoviestoredm_name": {
-            "defaultValue": "psmoviestoredm1",
+            "defaultValue": "psmoviestoredm",
             "type": "String"
         },
         "registries_psregistrydm_name": {
-            "defaultValue": "psregistrydm1",
+            "defaultValue": "psregistrydm",
             "type": "String"
         }
     },
@@ -36,10 +36,10 @@
             "name": "[parameters('serverfarms_psmoviestoredm_name')]",
             "location": "West Europe",
             "sku": {
-                "name": "B1",
-                "tier": "Basic",
-                "size": "B1",
-                "family": "B",
+                "name": "F1",
+                "tier": "Free",
+                "size": "F1",
+                "family": "F",
                 "capacity": 1
             },
             "kind": "linux",
@@ -116,7 +116,7 @@
                 "httpLoggingEnabled": true,
                 "logsDirectorySizeLimit": 35,
                 "detailedErrorLoggingEnabled": false,
-                "publishingUsername": "$psmoviestoredm1",
+                "publishingUsername": "$psmoviestoredm",
                 "scmType": "None",
                 "use32BitWorkerProcess": true,
                 "webSocketsEnabled": false,
@@ -185,7 +185,7 @@
                 "[resourceId('Microsoft.Web/sites', parameters('sites_psmoviestoredm_name'))]"
             ],
             "properties": {
-                "siteName": "psmoviestoredm1",
+                "siteName": "psmoviestoredm",
                 "hostNameType": "Verified"
             }
         }
