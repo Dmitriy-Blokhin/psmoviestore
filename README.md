@@ -14,8 +14,8 @@ How to up and run this example:
 5. Repeat building solution in Release mode.
 6. Run in command console: [docker image]
    Inspect the outpup and ensure that it contains following images:
-      psregistrydm.azurecr.io/psmoviestore  latest
-	  psregistrydm.azurecr.io/pspricingapi  latest
+	- psregistrydm.azurecr.io/psmoviestore  latest
+	- psregistrydm.azurecr.io/pspricingapi  latest
 7. Open powershell CLI as Administrator and run the [deploy.ps1] script from [ARM Template] folder using following commands:
 	- [Set-ExecutionPolicy RemoteSigned] 
 	- Type A and press Enter
