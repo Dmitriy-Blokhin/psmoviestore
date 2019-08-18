@@ -17,34 +17,34 @@ How to up and run this example:
       psregistrydm.azurecr.io/psmoviestore  latest
 	  psregistrydm.azurecr.io/pspricingapi  latest
 7. Open powershell CLI as Administrator and run the [deploy.ps1] script from [ARM Template] folder using following commands:
-	7.1. [Set-ExecutionPolicy RemoteSigned] 
-	7.2. Type A and press Enter
-	7.3. [& "<Absolute path to deploy.ps1>\deploy.ps1"]
-	7.4. Input Azure subscription ID and press Enter
-	7.5. Input Resourse Group name for all resourses [psmoviestore] and press Enter
-	7.6. Input name of deployment [InitialDeployment] and press Enter
-	7.7. Proceed with login authorization in Azure
-	7.8. In case of question about Resourse Group location, input required Azure Location [West Europe] and press Enter
-	7.9. Ensure that script completed without any errors
+	- [Set-ExecutionPolicy RemoteSigned] 
+	- Type A and press Enter
+	- [& "<Absolute path to deploy.ps1>\deploy.ps1"]
+	- Input Azure subscription ID and press Enter
+	- Input Resourse Group name for all resourses [psmoviestore] and press Enter
+	- Input name of deployment [InitialDeployment] and press Enter
+	- Proceed with login authorization in Azure
+	- In case of question about Resourse Group location, input required Azure Location [West Europe] and press Enter
+	- Ensure that script completed without any errors
 8. Login to Azure portal end ensure that following resourses were created:
-	1. Resource Group, which will contain next resourses:
-	1.1. Container registry - psregistrydm
-	1.2. App Service plan - psmoviestoredm
-	1.3. App Service - psmoviestoredm
+	- Resource Group, which will contain next resourses:
+	- - Container registry - psregistrydm
+	- - App Service plan - psmoviestoredm
+	- - App Service - psmoviestoredm
 9. Open CMD and login to just created Azure Container registry using following command:
-	[az acr login --name psregistrydm]
+	- [az acr login --name psregistrydm]
 10. Push docker images of the solution to ACR:
-	[docker push psregistrydm.azurecr.io/pspricingapi]
-	[docker push psregistrydm.azurecr.io/psmoviestore]
+	- [docker push psregistrydm.azurecr.io/pspricingapi]
+	- [docker push psregistrydm.azurecr.io/psmoviestore]
 11. Inspect repositories in ACR:
-	psmoviestore and pspricingapi are created
+	- psmoviestore and pspricingapi are created
 12. Open Container Settings for Web App for Containers and switch Image source to Azure Container Registry.
-In the Registry dropdown select psregistrydm
-Click Choose File button and select docker-compose.yml file from the solution folder.
-Click Save button in the buttom of the page.
+	- In the Registry dropdown select psregistrydm
+	- Click Choose File button and select docker-compose.yml file from the solution folder.
+	- Click Save button in the buttom of the page.
 13. From the psmoviestoredm App Service Overview blade copy URL value and open it in browser.
-This step may take some time due to running containers in the Azure.
-Finally you have to see the same web-site page as for local execution previously on step 4.
+	- This step may take some time due to running containers in the Azure.
+	- Finally you have to see the same web-site page as for local execution previously on step 4.
 		
 	
 	
